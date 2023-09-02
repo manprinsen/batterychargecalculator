@@ -1,0 +1,84 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: ColumnPanel
+  properties: {role: tonal-card, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+    spacing_below: small, background: ''}
+  name: column_panel_1
+  layout_properties: {grid_position: 'AWLMAL,ICNUBN'}
+  components:
+  - type: Label
+    properties: {role: headline, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: Power (kW) x Time (hours) = Energy (kWh), font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_1
+    layout_properties: {grid_position: 'KPSNXR,TYUWIJ'}
+- type: ColumnPanel
+  properties: {role: tonal-card, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+    spacing_below: small, background: ''}
+  name: column_panel_2
+  layout_properties: {grid_position: 'PRGHXL,KLBBHR'}
+  components:
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Enter charge speed (kW), font_size: 20, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'VTYQOY,MDHNGK'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '10',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 20,
+      font: '', spacing_above: small, type: number, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_power
+    layout_properties: {grid_position: 'VTYQOY,HFWDDY'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Enter charge time (hours), font_size: 20, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_2_copy
+    layout_properties:
+      col_widths: {}
+      grid_position: QEZVLI,XKNOMX
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '1',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 20,
+      font: '', spacing_above: small, type: number, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_hours
+    layout_properties:
+      col_widths: {}
+      grid_position: QEZVLI,MEPVPP
+  - type: Button
+    properties: {role: elevated-button, align: full, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Calculate, font_size: 20, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_calc
+    layout_properties: {grid_position: 'RCRGGU,ZJKAFL'}
+    event_bindings: {click: button_calc_click}
+- type: ColumnPanel
+  properties: {role: tonal-card, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+    spacing_below: small, background: ''}
+  name: column_panel_2_copy
+  layout_properties:
+    col_widths: {}
+    grid_position: QHDQDO,EOGQCY
+  components:
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: Power (kW) x Time (hours) = Energy (kWh), font_size: 20,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_energy
+    layout_properties:
+      col_widths: {}
+      grid_position: DGYFAM,AWSYCA
+is_package: true
