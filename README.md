@@ -11,7 +11,11 @@ Below, you will find:
 
 ## Opening this app in Anvil and getting it online
 
-### Cloning the app
+### Running the live app
+
+Go to https://energycalculator.anvil.app and try it out :)
+
+### Cloning the app https://energycalculator.anvil.app
 
 Go to the [Anvil Editor](https://anvil.works/build?utm_source=github:app_README) (you might need to sign up for a free account) and click on “Clone from GitHub” (underneath the “Blank App” option):
 
