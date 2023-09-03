@@ -1,4 +1,7 @@
-# About This [Anvil](https://anvil.works/?utm_source=github:app_README) App
+# Battery charge calculator with Anvil
+
+ Easily calculate your energy consumption with our web app! Just input power (kW) and time (hours), and get instant results in kilowatt-hours (kWh). Manage your energy efficiently and effortlessly.
+
 
 ### Build web apps with nothing but Python.
 
