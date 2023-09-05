@@ -2,6 +2,7 @@
 
  Easily calculate your energy consumption with our web app! Just input power (kW) and time (hours), and get instant results in kilowatt-hours (kWh). Manage your energy efficiently and effortlessly.
 
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjZma3ZuNmNxeXRuMGs1eDR3bmV2cGNsN3EyZDA2ZWIzajljMm5uayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QhqBSHAhqIL4K6ybcx/giphy.gif" alt="Clone from GitHub"/>
 
 ### Build web apps with nothing but Python.
 
