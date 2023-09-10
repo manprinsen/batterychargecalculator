@@ -9,14 +9,15 @@ class Form2(Form2Template):
         # Any code you write here will run before the form opens.
 
     def button_calc_click(self, **event_args):
-        if self.text_box_hours.text == None:
+        if self.slider_minutes.value == None:
             alert("Please enter charge time")
             return
-        if self.text_box_power.text == None:
+        if self.slider_power.value == None:
             alert("Please enter charge speed")
             return
-        power = float(self.text_box_power.text)
-        hours = float(self.text_box_hours.text)
+        power = float(self.slider_power.value)
+        minutes = int(self.slider_minutes.value)
+        hours = float(self.slider_minutes.value) / 60
         energy_raw = power * hours
         energy = round(energy_raw, 2)
-        self.label_energy.text = f"""After {hours} hours, the battery will be charged with {energy} kWh"""
+        self.label_energy.text = f"""After {minutes} minutes, the battery will be charged with {energy} kWh"""
